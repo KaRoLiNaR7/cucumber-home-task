@@ -85,7 +85,7 @@ When('I click on delete button', async () => {
 
 Then("Delete button disappear", async () => {
     const elem = await $('.added-manually');
-    !expect(elem).toBeExisting();
+    await(!expect(elem).toBeExisting());
 });
 
 // Status Codes test
