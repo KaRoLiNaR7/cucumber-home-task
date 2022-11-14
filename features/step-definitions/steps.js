@@ -46,7 +46,7 @@ Then("I am on users page {int}.", async (user) => {
 
 // Checkbox test
 When("I mark check on checkbox", async () => {
-    elem = await $('/html/body/div[2]/div/div/form/input[1]');
+    const elem = await $('/html/body/div[2]/div/div/form/input[1]');
     await $(elem).click();
 });
 
